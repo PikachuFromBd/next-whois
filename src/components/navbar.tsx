@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { VERSION } from "@/lib/env";
 import Link from "next/link";
-import { RiGithubFill } from "@remixicon/react";
+import { RiTelegramFill } from "@remixicon/react";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
 import { usePWAInstaller } from "./pwa_installer";
 import { LanguageSwitcher } from "./language-switcher";
@@ -93,12 +93,12 @@ export function Navbar() {
           <ThemeToggle />
           <LanguageSwitcher />
           <Link
-            href="https://github.com/zmh-program/next-whois-ui"
+            href="https://listkiss.t.me"
             target="_blank"
             className="inline-flex items-center justify-center rounded-full p-2 hover:scale-110 transition-all duration-300"
           >
-            <RiGithubFill className="h-[1rem] w-[1rem]" />
-            <span className="sr-only">GitHub</span>
+            <RiTelegramFill className="h-[1rem] w-[1rem]" />
+            <span className="sr-only">Telegram</span>
           </Link>
         </div>
       </nav>

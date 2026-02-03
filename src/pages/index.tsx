@@ -160,13 +160,13 @@ export default function Home() {
       }
 
       // Sort: Alt+S
-      if (e.key.toLowerCase() === "s" && e.altKey) {
+      if (e.key && e.key.toLowerCase() === "s" && e.altKey) {
         e.preventDefault();
         setSortOrder((prev) => (prev === "asc" ? "desc" : "asc"));
       }
 
       // Filter: Alt+F
-      if (e.key.toLowerCase() === "f" && e.altKey) {
+      if (e.key && e.key.toLowerCase() === "f" && e.altKey) {
         e.preventDefault();
       }
     };
